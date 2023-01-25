@@ -1,5 +1,5 @@
 # PokeShop
 This is a game with C++ and SQLite.
 
-PokeShop
-![PokeShopScreencut1](/repository/assets/1.png "PokeShopScreencut1")
+![PokeShopScreencut1](https://github.com/ShuxuanCai/PokeShop/blob/main/assets/1.png)
+![PokeShopScreencut2](https://github.com/ShuxuanCai/PokeShop/blob/main/assets/2.png)
