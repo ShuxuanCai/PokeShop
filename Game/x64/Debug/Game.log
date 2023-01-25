@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\lcv2032525\Downloads\FinalProject\Game\main.cpp(71,27): warning C4129: 'm': unrecognized character escape sequence
+C:\Users\lcv2032525\Downloads\FinalProject\Game\main.cpp(103,28): warning C4129: 'd': unrecognized character escape sequence
+  sqlite3.c
+  LINK : C:\Users\lcv2032525\Downloads\FinalProject\x64\Debug\Game.exe not found or not built by the last incremental link; performing full link
+  Game.vcxproj -> C:\Users\lcv2032525\Downloads\FinalProject\x64\Debug\Game.exe
