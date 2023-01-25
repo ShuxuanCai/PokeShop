@@ -282,7 +282,6 @@ int main(void)
         DrawText("Press X to close bag or cancel to talk to clerk!", 100, 60, 20, RED);
         DrawText("Press P to pause/remuse music!", 155, 85, 20, RED);
 
-        //DrawRectangleRec(box1, {0, 0, 0, 0});
         DrawRectangleRec(box1, { 0, 0, 0, 0 });
         DrawRectangleRec(box2, { 0, 0, 0, 0 });
         DrawRectangleRec(box3, { 0, 0, 0, 0 });
@@ -293,7 +292,6 @@ int main(void)
         DrawRectangleRec(box8, { 0, 0, 0, 0 });
         DrawRectangleRec(box9, { 0, 0, 0, 0 });
         DrawRectangleRec(box10, { 0, 0, 0, 0 });
-        //DrawRectangleRec(box11, GOLD);
         DrawRectangleRec(boxCharacter, { 0, 0, 0, 0 });
 
         if (CheckCollisionRecs(box1, boxCharacter))
@@ -438,7 +436,7 @@ int main(void)
 
         if (showBoxForBag == true)
         {
-            DrawRectangleLinesEx(container, 3, borderColor);    // Draw container border
+            DrawRectangle(container.x, container.y, container.width, container.height, {150, 180, 180, 150});    // Draw container border
 
             // Draw text in container (add some padding)
             Rectangle textInRec = { container.x + 4, container.y + 4, container.width - 4, container.height - 4 };
@@ -491,7 +489,7 @@ int main(void)
 
         if (position.x >= 170 && position.x <= 180 && position.y >= 140 && position.y <= 160 && AskForSellOrBuy == true)
         {
-            DrawRectangleLinesEx(container, 3, borderColor);    // Draw container border
+            DrawRectangle(container.x, container.y, container.width, container.height, { 150, 180, 180, 150 });    // Draw container border
 
             Rectangle textInRec = { container.x + 4, container.y + 4, container.width - 4, container.height - 4 };
             DrawTextBoxed(font, textForClert2, textInRec, 20.0f, 2.0f, wordWrap, BLACK);
@@ -515,7 +513,7 @@ int main(void)
 
         if (buy == true)
         {
-            DrawRectangleLinesEx(container, 3, borderColor);    // Draw container border
+            DrawRectangle(container.x, container.y, container.width, container.height, { 150, 180, 180, 150 });    // Draw container border
 
                 // Draw text in container (add some padding)
             Rectangle textInRec = { container.x + 4, container.y + 4, container.width - 4, container.height - 4 };
@@ -588,7 +586,7 @@ int main(void)
 
         if (sell == true)
         {
-            DrawRectangleLinesEx(container, 3, borderColor);    // Draw container border
+            DrawRectangle(container.x, container.y, container.width, container.height, { 150, 180, 180, 150 });    // Draw container border
 
                 // Draw text in container (add some padding)
             Rectangle textInRec = { container.x + 4, container.y + 4, container.width - 4, container.height - 4 };
@@ -676,7 +674,7 @@ int main(void)
 
         if (showTextNotEnough == true)
         {
-            DrawRectangleLinesEx(container, 3, borderColor);    // Draw container border
+            DrawRectangle(container.x, container.y, container.width, container.height, { 150, 180, 180, 150 });    // Draw container border
 
                 // Draw text in container (add some padding)
             Rectangle textInRec = { container.x + 4, container.y + 4, container.width - 4, container.height - 4 };
